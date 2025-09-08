@@ -1,0 +1,189 @@
+#1
+a,b=map(eval,input().split(","))
+if a<b:
+	print(f"{b} is greater than {a}")
+else:
+	print(f"{a} is greater than {b}")
+	
+#2
+a,b,c=map(eval,input().split(","))
+if (a>b and a>c):
+	print(f"{a} is greater than {b} and {c}")
+elif (b>a and b>c):
+	print(f"{b} is greater than {a} and {c}")
+else:
+	print(f"{c} is greater than {a} and {b}")
+	
+#3
+a=eval(input())
+if (a<0):
+	print(f"{a} is negative.")
+elif (a==0):
+	print(f"{a} is zero.")
+else:
+	print(f"{a} is positive.")
+	
+#4
+a=eval(input())
+if (a%5==0 and a%11==0):
+	print(f"{a} is divisible by both 5 and 11.")
+else:
+	print(f"{a} is not divisible by both 5 and 11.")
+	
+#5
+a=int(input())
+if(a%2==0):
+	print(f"{a} is an even no.")
+else:
+	print(f"{a} is an odd no.")
+	
+#6
+a=eval(input())
+if (((a%100!=0) and (a%4==0))or(a%400==0)):
+	print(f"{a} is a leap year.")
+else:
+	print(f"{a} is not a leap year.")
+	
+#7
+a=input()
+if(a.isalpha()):
+	print("it is alphabet")
+	
+#8
+a=input()
+if(a in "aeiouAEIOU"):
+	print("{a} is a vowel.")
+else:
+	print("{a} is a consonant.")
+	
+#9
+a=input()
+if(a.isalpha()):
+	print("it is alphabet")
+elif(a.isalnum()):
+	print("it is number")
+else:
+	print("it is special character")
+	
+#10
+a=input()
+if(a.isupper()):
+	print("it is upper case")
+else:
+	print("it is lower")
+
+#11
+a=input()
+if (a==1):
+	print("monday")
+elif(a==2):
+	print("tuesday")
+elif(a==3):
+	print("wednesday")
+elif(a==4):
+	print("thursday")
+elif(a==5):
+	print("friday")
+elif(a==6):
+	print("saturday")
+elif(a==7):
+	print("sunday")
+	
+#12
+a=int(input())
+if ((a==1) or (a==3) or (a==5) or (a==7) or (a==8) or (a==10) or (a==12)):
+	print("31")
+elif(a==2):
+	print("28")
+elif((a==4) or (a==6) or (a==9) or (a==11)):
+	print("30")
+
+#13
+n=int(input())
+a=n//500
+b=(n%500)//100
+c=((n%500)%100)//50
+d=(((n%500)%100)%50)//20
+e=((((n%500)%100)%50)%20)//10
+f=(((((n%500)%100)%50)%20)%10)//5
+g=((((((n%500)%100)%50)%20)%10)%5)//2
+h=(((((((n%500)%100)%50)%20)%10)%5)%2)//1
+print(f"500:{a},100:{b},50:{c},20:{d},10:{e},5:{f},2:{g},1:{h}")
+
+#14
+a,b,c=map(int,input())
+sum=a+b+c
+if(sum == 180 && a > 0 && b > 0 && c > 0) 
+	printf("Triangle is valid.")
+else
+    printf("Triangle is not valid.")
+
+#15
+a,b,c=map(int,input().split(","))
+if(((a+b)>c) and ((a+c)>b) and ((b+c)>a)):
+	print("Triangle is valid")
+else:
+	print("Triangle is not valid")
+	
+#16
+a,b,c=map(int,input().split(","))
+if(a==b==c):
+	print("Equilateral triangle")
+elif(a==b!=c):
+	print("Isosceles traingle")
+else:
+	print("Scalene traingle")
+	
+#17
+a,b,c=map(int,input().split(","))
+d=(b**2)-(4*a*c)
+if(d>0):
+	r1=(-b+(d**0.5))/(2*a)
+	r2=(-b-(d**0.5))/(2*a)
+	print(r1,r2)
+elif(d==0):
+	r1=r2=-b/(2*a)
+	print(r1,r2)
+elif(d<0):
+	r1=-b/(2*a)+i(((d**0.5)/(2*a)))
+	r2=-b/(2*a)-i(((d**0.5)/(2*a)))
+	print(r1,r2)
+
+#18
+sp,cp=map(int,input().split(","))
+if(sp>cp):
+	profit=sp-cp
+	print(f"profit:{profit}")
+else:
+	loss=cp-sp
+	print(f"loss:{loss}")
+	
+#19
+a,b,c,d,e=map(int,input().split(","))
+p=(a+b+c+d+e)/5
+if(p>=90):
+	print("Grade A")
+elif(p>=80):
+	print("Grade B")
+elif(p>=70):
+	print("Grade C")
+elif(p>=60):
+	print("Grade D")
+elif(p>=50):
+	print("Grade E")
+else:
+	print("Grade F")
+	
+#20
+basic = int(input())
+if(basic <= 10000):
+        da  = basic * 0.8
+        hra = basic * 0.2
+elif(basic <= 20000):
+        da  = basic * 0.9
+        hra = basic * 0.25
+else:
+        da  = basic * 0.95
+        hra = basic * 0.3
+gross = basic + hra + da
+print(gross)
