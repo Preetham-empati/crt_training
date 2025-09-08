@@ -1,0 +1,63 @@
+#1
+a=int(input())
+print(a)
+#2
+a,b=map(int,input().split())
+print(f"sum={a+b}")
+#3
+a,b=map(int,input().split())
+print(f"sum={a+b}")
+print(f"sub={a-b}")
+print(f"divide={a/b}")
+print(f"mul={a*b}")
+print(f"mod={a%b}")
+#4
+l,b=map(int,input().split(","))
+print(f"perimeter={2*(l+b)}")
+#5
+l,b=map(int,input().split(","))
+print(f"area={l*b}")
+#6
+r=int(input())
+print(f"diameter={2*r}")
+print(f"circumference={2*3.14*r}")
+print(f"Area={(3.14*(r*r)}")
+#7
+l=int(input())
+print(f"in meters={l/ 100}")
+print(f"in kilometers={l/ 100000}")
+#8
+c=int(input())
+print(f"in fahrenheit ={(c* 9 / 5) + 32}")
+#9
+f=int(input())
+print(f"in celsius ={(f - 32) * 5 / 9}")
+#10
+d=int(input())
+y=d/365;
+w=(d%365)/7
+days=(d%365)%7	
+print(f"yeqars={y},weeks{w},days={days} ")
+#16
+a,b,c,d,e=map(int,input().split())
+print(f"total ={a+b+c+d+e}")
+print(f"average ={(a+b+c+d+e)/5}")
+print(f"percentage ={((a+b+c+d+e)/ 500) * 100}")
+#17
+ptr=map(int,input().split())
+print(f"simple intrest={ptr/100}")
+#18
+ptr=map(int,input().split())
+print(f"simple intrest={p*(1+(r/100))**1}")
+
+
+
+
+
+
+
+
+
+
+
+
