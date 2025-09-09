@@ -86,15 +86,17 @@ a=int(input("1st num"))
 b=input("operation")
 c=int(input("2nd num"))
 match b :
-    case _ "+"
+    case "+" :
         print(f"{a} + {b} ={a+b}")
-    case _ "+"
+    case "-" :
         print(f"{a} - {b} ={a-b}")
-    case _ "+"
+    case "*" :
         print(f"{a} * {b} ={a*b}")
-    case _ "+"
+    case "/" :
         print(f"{a} / {b} ={a/b}")
-     case _ "+"
+     case "%" :
         print(f"{a} % {b} ={a%b}")
-    case _ "+"
+    case "**" :
         print(f"{a} ** {b} ={a**b}")
+    case "//" :
+        print(f"{a} // {b} ={a/b}")
