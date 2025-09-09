@@ -81,3 +81,20 @@ match a :
         r1=r2=-b/2*a
         i=math.sqrt(-d)/(2*a)
         print(f"root{r1} and imag{i}")
+#8
+a=int(input("1st num"))
+b=input("operation")
+c=int(input("2nd num"))
+match b :
+    case _ "+"
+        print(f"{a} + {b} ={a+b}")
+    case _ "+"
+        print(f"{a} - {b} ={a-b}")
+    case _ "+"
+        print(f"{a} * {b} ={a*b}")
+    case _ "+"
+        print(f"{a} / {b} ={a/b}")
+     case _ "+"
+        print(f"{a} % {b} ={a%b}")
+    case _ "+"
+        print(f"{a} ** {b} ={a**b}")
