@@ -1,0 +1,83 @@
+#1
+w=int(input())
+match w :
+    case 1:
+        print('mondat')
+    case 2:
+        print("tuesday")
+
+    case 3:
+        print("wed")
+    case 4:
+        print("thursday")
+    case 5:
+        print("fri")
+    case 6:
+        print("sat")
+    case 7:
+        print("sunday")
+  
+#2
+month = int(input())
+match month:
+    case 1 | 3 | 5 | 7 | 8 | 10 | 12:
+        print("Total number of days = 31")
+    case 4 | 6 | 9 | 11:
+        print("Total number of days = 30")
+    case 2:
+        print("Total number of days = 28 or 29")
+    case _:
+        print("Invalid ")
+#3
+
+a=input()
+match a :
+    case 'a' | 'e'| 'i' | 'o'|'u':
+        print('vowel')
+    case _:
+        print("consonant")
+#4
+
+a=int(input())
+b=int(input())
+match a and b:
+    case _ if a>b:
+        print(f"max:{a}")
+    case _:
+        print(f"max{b}")
+#5
+
+a=int(input())
+match a :
+    case _ if a%2==0:
+        print(f"even:{a}")
+    case _:
+        print(f"odd{a}")
+#6
+
+a=int(input())
+match a :
+    case _ if a>0:
+        print(f"positive:{a}")
+    case _ if a<0:
+        print(f"negative{a}")
+    case _:
+        print("zero")
+#7
+import math
+a=int(input())
+b=int(input())
+c=int(input())
+d=(b*b)-(4*a*c)
+match a :
+    case _ if d>0:
+        r1=-b+math.sqrt(d)/(2*a)
+        r1=-b-math.sqrt(d)/(2*a)
+        print(f"roots:{r1} and {r2}")
+    case _ if d==0:
+        r1=r2=-b/2*a
+        print(f"root{r1}")
+    case _:
+        r1=r2=-b/2*a
+        i=math.sqrt(-d)/(2*a)
+        print(f"root{r1} and imag{i}")
